@@ -1,1 +1,7 @@
 google-generativeai
+torch
+torchvision
+torchaudio
+transformers
+sentencepiece
+sacremoses
