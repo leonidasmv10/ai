@@ -1,5 +1,6 @@
 import os
 import google.generativeai as genai
+import openai
 
 from enum import Enum
 
@@ -27,7 +28,7 @@ class AIConnection:
             if ai_type == AiType.GEMINI:
                 genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
             elif ai_type == AiType.OPENAI:
-                pass
+                openai.api_key=os.environ.get("OPENAI_API_KEY")
             elif ai_type == AiType.ME:
                 pass
        
