@@ -1,0 +1,3 @@
+class AutomaticSpeechRecognition():
+    def __init__(self):
+        pass
