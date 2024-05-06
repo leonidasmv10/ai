@@ -12,6 +12,9 @@ class TextToImage():
     
     def get_image(self, index):
         return self.__images[index]
+    
+    def clear_images(self):
+        self.__images.clear()
 
     def get_num_images(self):
         return self.__num_images
