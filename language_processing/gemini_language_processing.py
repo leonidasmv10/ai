@@ -1,8 +1,8 @@
-from ai.chat.chat import Chat
+from ai.language_processing.language_processing import LanguageProcessing
 from ai.ai_connection import AiType, AIConnection
 import google.generativeai as genai
 
-class GeminiChat(Chat):
+class GeminiLanguageProcessing(LanguageProcessing):
     def __init__(self):
         super().__init__()
         AIConnection().configuration(AiType.GEMINI)

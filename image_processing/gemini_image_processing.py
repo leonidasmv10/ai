@@ -1,8 +1,8 @@
-from ai.chat_vision.chat_vision import ChatVision
+from ai.image_processing.image_processing import ImageProcessing
 from ai.ai_connection import AiType, AIConnection
 import google.generativeai as genai
 
-class GeminiChatVision(ChatVision):
+class GeminiImageProcessing(ImageProcessing):
     def __init__(self):
         super().__init__()
         AIConnection().configuration(AiType.GEMINI)

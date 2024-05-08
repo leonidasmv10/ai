@@ -1,9 +1,9 @@
-class ChatVision():
+class LanguageProcessing():
     def __init__(self):
         self.model = None
         self.chat = None
         
-    def send_message(self, message, image):
+    def send_message(self, message):
         return ""
     
     def get_history(self):
