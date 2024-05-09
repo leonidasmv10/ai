@@ -6,3 +6,6 @@ torchaudio
 transformers
 sentencepiece
 sacremoses
+accelerate
+diffusers
+gTTS
