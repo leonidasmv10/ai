@@ -6,7 +6,7 @@ class GeminiLanguageProcessing(LanguageProcessing):
     def __init__(self):
         super().__init__()
         AIConnection().configuration(AiType.GEMINI)
-        self.model = genai.GenerativeModel('gemini-pro')
+        self.model = genai.GenerativeModel('gemini-1.5-flash')
         self.chat = self.model.start_chat(history=[])
 
     def send_message(self, message):
